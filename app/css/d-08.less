@@ -1,0 +1,28 @@
+@color1: red;
+@color2: green;
+
+#toggle
+{
+  width: 150px;
+  height: 150px;
+  background-color: @color1;
+  border: 2px solid @color2;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#toggle.toggled{
+  background-color: @color2;
+  border: 2px solid @color1;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0);
+  /* Safari */
+}
+::-moz-selection {
+  background: rgba(0, 0, 0, 0);
+  /* Firefox */
+}

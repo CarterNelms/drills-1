@@ -15,7 +15,6 @@
 
     var range = $('#numbers').val().split(',');
     var nums = makeArray(range[0], range[1]);
-    debugger;
 
     var matedSums = nums.filter(isInFirstHalf, nums).map(mateSum, nums.reverse());
 

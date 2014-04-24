@@ -1,0 +1,37 @@
+body{
+  background-color: lightgrey;
+}
+
+.rectangle{
+  width: 200px;
+  height: 100px;
+  background-color: black; 
+  border: 2px solid grey; 
+  position: absolute;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;  
+}
+
+#container{
+  width: 100%;
+  height: 100%;
+  background-color: rbga(0,0,0,0);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.rectangle.selected{
+  border-color: red;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0);
+  /* Safari */
+}
+::-moz-selection {
+  background: rgba(0, 0, 0, 0);
+  /* Firefox */
+}

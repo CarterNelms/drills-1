@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title Drill 13
+		link(rel='stylesheet', href='css/d-13.css')
+	body
+		a(href='index.html') Home
+		h1 Drill 13
+		h2 Enter values to add separated by +
+		h2 Then eneter values to multiply separated by *
+		h2 Separated both sets of numbers by -
+		h2 Prints sum of odd numbers to add and product of odd numbers to multiply
+		input#input(type='text')
+		button#operate GO!
+		#output
+			table
+				thead
+					tr
+						th Sum
+						th Product
+				tbody
+					tr
+						td
+							#sum
+						td
+							#product
+
+		script(src='js/vendor/jquery-2.1.0.js')
+		script(src='js/source/d-13.js')
